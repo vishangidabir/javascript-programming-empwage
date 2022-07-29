@@ -20,7 +20,7 @@ console.log("Welcome to Employee Wage Program !");
             break;
     }
     let empWage=empHr*WAGE_PER_HOUR;
-    console.log(" UC2-->Employee Wage is :"+empWage);
+    console.log("UC2-->Employee Wage is :"+empWage);
 }
 
 
