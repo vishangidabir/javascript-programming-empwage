@@ -1,6 +1,7 @@
 console.log("Welcome to Employee Wage Program !");
-//UC3-->To Write Function For Daily Working Hours
+//UC4-->Calculating Wages for Month
 {
+    const NUM_OF_WORKING_DAYS=20;
     const IS_PART_TIME=1;
     const IS_FULL_TIME=2;
     const PART_TIME_HOURS=4;
@@ -17,10 +18,12 @@ console.log("Welcome to Employee Wage Program !");
         }
     }
     let empHr=0;
-    let empCheck=Math.floor(Math.random()*3);
-    empHr=getWorkingHours(empCheck);
+    for(let day =0;day<NUM_OF_WORKING_DAYS;day++){
+        let empCheck=Math.floor(Math.random()*3);
+        empHr+=getWorkingHours(empCheck);
+    }
     let empWage=empHr*WAGE_PER_HOUR;
-    console.log("UC3--> Employee Daily wage :"+empWage);
+    console.log("Total Hours "+empHr+" Employee Wage is :"+empWage);
 }
 
 
