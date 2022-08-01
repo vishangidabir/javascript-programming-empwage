@@ -1,5 +1,5 @@
 console.log("Welcome to Employee Wage Program !");
-//UC7-->Storing The Daily Wage in a Array
+//UC8-->Storing The Daily Wage in a Map
 {
     const MAXIMUM_WORKING_DAYS = 20;
     const IS_PART_TIME = 1;
